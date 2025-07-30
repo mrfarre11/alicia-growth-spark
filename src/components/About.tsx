@@ -1,7 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Award, Users, TrendingUp } from "lucide-react";
+import { GraduationCap, Award, Users, TrendingUp, Handshake } from "lucide-react";
 import aliciaImage from "@/assets/alicia-professional.jpg";
+import aliciaAndCarlImage from "@/assets/alicia-and-carl.jpg";
 
 const About = () => {
   return (
@@ -16,6 +17,57 @@ const About = () => {
             Building on a 50-year legacy of excellence in accounting and tax services, 
             continuing the trusted tradition established by Carl Oden, CPA.
           </p>
+        </div>
+
+        {/* Featured transition story */}
+        <div className="mb-16">
+          <Card className="shadow-professional overflow-hidden">
+            <div className="grid lg:grid-cols-2">
+              <div className="relative">
+                <img 
+                  src={aliciaAndCarlImage} 
+                  alt="Alicia Howard with Carl Oden"
+                  className="w-full h-full object-cover min-h-[300px]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm opacity-90">Alicia Howard with Carl Oden, CPA</p>
+                </div>
+              </div>
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="flex items-center mb-4">
+                  <Handshake className="h-8 w-8 text-primary mr-3" />
+                  <h3 className="text-2xl font-bold text-foreground">
+                    A Trusted Transition
+                  </h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  In 2024, after a remarkable 50-year career in accounting, Carl Oden, CPA, retired. 
+                  Alicia, who had worked alongside Carl for six years, was honored to take over his 
+                  clients and continue his legacy of exceptional service.
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  This transition ensures continuity of the high-quality, personalized accounting 
+                  services that clients have come to trust and depend on for decades. Carl's 
+                  confidence in Alicia speaks to her expertise and dedication to client success.
+                </p>
+                <div className="flex items-center space-x-8">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">50</div>
+                    <div className="text-sm text-muted-foreground">Years Legacy</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">6</div>
+                    <div className="text-sm text-muted-foreground">Years Partnership</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary">2024</div>
+                    <div className="text-sm text-muted-foreground">Seamless Transition</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -39,32 +91,33 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right: About content */}
+          {/* Right: Credentials and expertise */}
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                The Transition from Carl Oden to Alicia Howard
+                Professional Credentials & Expertise
               </h3>
               <p className="text-muted-foreground mb-4">
-                In 2024, after a remarkable 50-year career in accounting, Carl Oden, CPA, retired. 
-                Alicia, who had worked alongside Carl for six years, was honored to take over his 
-                clients and continue his legacy of exceptional service and expertise.
+                Alicia boasts both a Bachelor of Science and a Master of Science in accounting. 
+                As an Enrolled Agent, she's already a trusted expert, and she's now eagerly 
+                working towards completing her CPA certification to further elevate her expertise.
               </p>
               <p className="text-muted-foreground">
-                This transition ensures continuity of the high-quality, personalized accounting 
-                services that clients have come to trust and depend on for decades.
+                Her years of experience working alongside Carl, combined with her advanced 
+                education and professional certifications, make her uniquely qualified to 
+                handle even the most complex tax and accounting challenges.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Years Legacy</div>
-              </div>
-              <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                <div className="text-3xl font-bold text-primary">6</div>
-                <div className="text-sm text-muted-foreground">Years Partnership</div>
-              </div>
+            <div className="bg-secondary/50 p-6 rounded-lg">
+              <h4 className="font-semibold text-foreground mb-3">Educational Background</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Bachelor of Science in Accounting</li>
+                <li>• Master of Science in Accounting</li>
+                <li>• IRS Enrolled Agent Certification</li>
+                <li>• Currently pursuing CPA certification</li>
+                <li>• Continuous education in tax law updates</li>
+              </ul>
             </div>
           </div>
         </div>
