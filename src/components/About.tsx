@@ -70,47 +70,33 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left: Professional image and credentials */}
+        <div className="max-w-4xl mx-auto mb-16">
+          {/* Professional credentials content */}
           <div className="space-y-6">
-            <div className="relative">
-              <img 
-                src={aliciaImage} 
-                alt="Alicia Howard, Enrolled Agent"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-professional"
-              />
-              <div className="absolute -bottom-4 -right-4 bg-gradient-primary p-4 rounded-xl shadow-button">
-                <Award className="h-8 w-8 text-primary-foreground" />
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              <Badge className="bg-primary text-primary-foreground px-4 py-2">Enrolled Agent</Badge>
-              <Badge className="bg-accent text-accent-foreground px-4 py-2">MS Accounting</Badge>
-              <Badge className="bg-secondary text-secondary-foreground px-4 py-2">CPA Candidate</Badge>
-            </div>
-          </div>
-
-          {/* Right: Credentials and expertise */}
-          <div className="space-y-6">
-            <div>
+            <div className="text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Professional Credentials & Expertise
               </h3>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
                 Alicia boasts both a Bachelor of Science and a Master of Science in accounting. 
                 As an Enrolled Agent, she's already a trusted expert, and she's now eagerly 
                 working towards completing her CPA certification to further elevate her expertise.
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Her years of experience working alongside Carl, combined with her advanced 
                 education and professional certifications, make her uniquely qualified to 
                 handle even the most complex tax and accounting challenges.
               </p>
             </div>
 
-            <div className="bg-secondary/50 p-6 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-3">Educational Background</h4>
+            <div className="flex flex-wrap gap-2 justify-center mb-8">
+              <Badge className="bg-primary text-primary-foreground px-4 py-2">Enrolled Agent</Badge>
+              <Badge className="bg-accent text-accent-foreground px-4 py-2">MS Accounting</Badge>
+              <Badge className="bg-secondary text-secondary-foreground px-4 py-2">CPA Candidate</Badge>
+            </div>
+
+            <div className="bg-secondary/50 p-6 rounded-lg max-w-2xl mx-auto">
+              <h4 className="font-semibold text-foreground mb-3 text-center">Educational Background</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Bachelor of Science in Accounting</li>
                 <li>• Master of Science in Accounting</li>
